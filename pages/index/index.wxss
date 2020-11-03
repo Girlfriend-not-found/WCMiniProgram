@@ -1,0 +1,29 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 375rpx;
+  height: 375rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.usermotto {
+  margin-top: 100rpx;
+}

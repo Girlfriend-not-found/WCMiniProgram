@@ -1,0 +1,32 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ToDoList/ToDoList"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFC0CB",
+    "navigationBarTitleText": "HOME",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "default"
+  },
+  "tabBar": {
+    "backgroundColor": "#FFC0CB",
+    "borderStyle": "white",
+    "selectedColor": "#FFFFCC",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/conversation.png",
+      "selectedIconPath": "images/conversation.png",
+      "text": "Home"
+    }, {
+      "pagePath": "pages/ToDoList/ToDoList",
+      "iconPath": "images/checklist.png",
+      "selectedIconPath": "images/checklist.png",
+      "text": "ToDoList"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
