@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<image class='background' src="../../images/timg.jpg" mode="aspectFill"></image>
+<view class='page'>
+  <view class='nav'>
+    <view bindtap='click1' class='{{nav1}}'>
+      <text style='font-weight: bold'>UNFINISHED</text>
+    </view>
+    <view bindtap='click2' class='{{nav2}}'>
+      <text style='font-weight: bold'>CHECKED</text>
+    </view>
+  </view>
+
+  <view class='body'>
+    <!-- 待办开始 -->
+    <swiper>
+      <swiper-item>  
+        <view wx:if="{{condition1}}">
+          <view class='guide'>
+            <text>Click ADD to add to-do</text>
+          </view>
+          <view class='list1' wx:for="{{array}}" id='{{index}}' bindtap='short'>
+            {{item}}
+          </view>
+          <!-- 输入框增加 -->
+          <view class='btn'>
+            <button class='press1' bindtap="click" type='primary'>ADD</button>
+          </view>
+        </view> 
+        <view class='area' wx:if="{{input}}">
+          <textarea bindconfirm='confirm' auto-height placeholder='输入待办事项'></textarea>
+        </view>
+      </swiper-item>
+    <!-- 待办结尾-->
+    <!-- 已办开始 -->
+      <swiper-item>
+          <view wx:if="{{condition2}}" class='finish'>
+            <view class="list2" wx:for="{{array1}}">
+              {{item}}
+            </view>
+          </view>
+      </swiper-item>
+    </swiper>
+    <!-- 已办结尾 -->
+  </view>
+</view>
